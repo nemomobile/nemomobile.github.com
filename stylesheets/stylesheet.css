@@ -5,6 +5,7 @@
 body{
     font-family: "Open Sans";
     background: url(../images/background.jpg);
+    overflow-y: scroll;
 }
 h1{
     color: #1e3940;
@@ -69,7 +70,7 @@ ul li{
     border-radius: 10px;
 
 }
-.smallMenu a:target{
+.smallMenu a:target, .smallMenu a.active{
     background-color: rgba(55,113,200,0.3);
 }
 .smallMenu a img{
@@ -126,6 +127,9 @@ img.w400{
 .leftmenu li a{
     text-decoration: inherit;
     color: inherit
+}
+.leftmenu li a.active{
+    color: #0099FF;
 }
 #pane{
     float: left;

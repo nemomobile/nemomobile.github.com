@@ -1,0 +1,67 @@
+    <h2>Introduction</h2>
+    
+    <p>Most components description websites list the components and describe how and when you should
+    use them. Every component, however, was invented to solve a specific user interface problem, not 
+    for the sake of existing. For this reason in this website, you will find a list of common use cases
+    and then the component that fit's them better.
+    </p>
+    
+    <h3>Don't think in components, think in usage scenarios</h3>
+    <p>
+        Many developers think out their features in components and layouts. They visualize the application
+            in their minds before even starting designing it. If you do that, <strong>you're doing
+            it wrong!</strong>
+        Think as a user. What would you expect from your app? Lay out your problem and then try to solve it,
+            not the other way around. Don't provide solutions in search of a problem.
+    </p>
+    <p>
+        Consider the following use-case. You are developing a contacts application, and want to implement 
+            a groups feature. The first thing that comes to mind is a page to create and manage groups, 
+            and add contacts to them.
+    </p>
+    <h4>The use case</h4>
+    <p>A user wants to group his contacts. For the user to require grouping the possibility is that
+       he has many contacts, so we can safely assume that for the majority of users of this feature
+       the contacts to be grouped will be already there. You can always run a small survey to test your
+       assumptions. A sample of 100 people is more than enough.
+    </p>
+    <p>
+        After defining the groups and adding their original members, the user will want to add users into
+        groups as they are added to his address book.
+    </p>
+    <p>
+        The user will most probably want to view his contacts by group and be able to remove a user from
+            a group.
+    </p>
+    <h4>The solution</h4>
+    <p>
+        As the contacts are already in place, we will assume that selecting a contact, the user will
+            want to be able to add it to a group. This can be easily done from the context menu of 
+            the contact. The user must have a choice to create a new group instead of adding a user to
+            an existing one. This takes care of the creation of a group.
+    </p>
+    <p>
+        Users that group their contacts will want to be able to view their contact list sorted/grouped
+        by group. Thus we can add another option to our default sorting/grouping options of our application.
+            This takes care of viewing the members of a specific group gathered together. The user must
+        have a context-aware way to remove a user from a specific group. Users that belong to more than
+        one groups will show up multiple times in the list. For more control we can consider a control
+        that collapses all the groups to their titles. We can also allow sorting on the collapsed groups
+        so that the user has control over which group is visible when the contacts application launches.
+    </p>
+    <h4>The two approaches</h4>
+    <p>
+        The use-case approach will provide the same functionality (and even more), with just two context
+            menu items, one more sorting setting, and a sheet that allows group selection and creation.
+    </p>
+    <p>
+        The classic approach, will require an extra page in the application, with a list of all groups, 
+            context menu for each group with basic functions, a sheet to add contacts to each group
+            in excess to what will be needed with the above approach, making the application more 
+            difficult to develop, cluttered and more difficult to use.
+    </p>
+    <h4>Verdict</h4>
+    <p>
+        Create use cases, find the interface challenges you have to solve and choose from the list on the
+            left to read a suggestion as to what control you should use.
+    </p>
