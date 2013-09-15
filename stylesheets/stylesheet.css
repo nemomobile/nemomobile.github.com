@@ -5,6 +5,7 @@
 body{
     font-family: "Open Sans";
     background: url(../images/background.jpg);
+    overflow-y: scroll;
 }
 h1{
     color: #1e3940;
@@ -26,6 +27,7 @@ h2{
     font-weight: 100;
     font-size: 210%;
 }
+
 h4{
     font-weight: 700;
     font-size: 100%;
@@ -73,11 +75,70 @@ ul li{
     border-radius: 10px;
 
 }
-.smallMenu a:target{
+.smallMenu a:target, .smallMenu a.active{
     background-color: rgba(55,113,200,0.3);
 }
 .smallMenu a img{
     height: 40px;
+}
+img.left{
+    float:left;
+    margin-right: 10px;
+}
+img.right{
+    float:right;
+    margin-left: 10px;
+}
+img.left.clear{
+    clear: left;
+}
+img.right.clear{
+    clear: right;
+}
+img.w400{
+    width: 400px;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.setblock{
+    margin-bottom: 30px;
+}
+.leftmenu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    width: 200px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.leftmenu li:first-child{
+    font-size: 155%;
+}
+.leftmenu li{
+    list-style-type: none;
+    list-style-image: none;
+    padding: 7px 0;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.leftmenu li a{
+    text-decoration: inherit;
+    color: inherit
+}
+.leftmenu li a.active{
+    color: #0099FF;
+}
+#pane{
+    float: left;
+    width: 700px;
 }
 
 a.download{
